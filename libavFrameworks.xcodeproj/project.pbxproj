@@ -21,26 +21,32 @@
 			name = All;
 			productName = all;
 		};
-		C254605A17E3C4400048CF55 /* Make */ = {
+		C27A2BF717E8B22700531C8B /* Make */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C254605B17E3C4400048CF55 /* Build configuration list for PBXAggregateTarget "Make" */;
+			buildConfigurationList = C27A2BF917E8B22700531C8B /* Build configuration list for PBXAggregateTarget "Make" */;
 			buildPhases = (
-				C254605E17E3C4990048CF55 /* ShellScript */,
+				C27A2BF817E8B22700531C8B /* ShellScript */,
+			);
+			dependencies = (
+				C2569AC417E8B2950021BF3C /* PBXTargetDependency */,
+			);
+			name = Make;
+			productName = Configure;
+		};
+		C2FC42D217E7C2F600DB2AED /* Configure */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C2FC42D317E7C2F600DB2AED /* Build configuration list for PBXAggregateTarget "Configure" */;
+			buildPhases = (
+				C2FC42D617E7C32400DB2AED /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = Make;
-			productName = libav;
+			name = Configure;
+			productName = Configure;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		036C253814932FB400261C27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036C251D14932F8200261C27 /* Cocoa.framework */; };
-		036C254C14932FCD00261C27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036C251D14932F8200261C27 /* Cocoa.framework */; };
-		036C256014932FDC00261C27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036C251D14932F8200261C27 /* Cocoa.framework */; };
-		036C257414932FE300261C27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036C251D14932F8200261C27 /* Cocoa.framework */; };
-		036C258814932FEA00261C27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036C251D14932F8200261C27 /* Cocoa.framework */; };
-		036C259C14932FF100261C27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036C251D14932F8200261C27 /* Cocoa.framework */; };
 		036C25E5149333E000261C27 /* adler32.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25C4149333DF00261C27 /* adler32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C25E6149333E000261C27 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25C5149333DF00261C27 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C25E7149333E000261C27 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25C6149333DF00261C27 /* attributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -71,8 +77,6 @@
 		036C2601149333E000261C27 /* pixfmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25E0149333DF00261C27 /* pixfmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C2602149333E000261C27 /* random_seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25E1149333DF00261C27 /* random_seed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C2603149333E000261C27 /* rational.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25E2149333DF00261C27 /* rational.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		036C2604149333E000261C27 /* samplefmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25E3149333DF00261C27 /* samplefmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		036C2605149333E000261C27 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25E4149333DF00261C27 /* sha.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C262B14943BCB00261C27 /* bswap.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C262914943BCA00261C27 /* bswap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C262C14943BCB00261C27 /* intreadwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C262A14943BCA00261C27 /* intreadwrite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C262F14943C3300261C27 /* avdevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C262E14943C3300261C27 /* avdevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,7 +84,6 @@
 		036C263C14943D0F00261C27 /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C263414943D0F00261C27 /* avcodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C263D14943D0F00261C27 /* avfft.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C263514943D0F00261C27 /* avfft.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C263E14943D0F00261C27 /* dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C263614943D0F00261C27 /* dxva2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		036C263F14943D0F00261C27 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C263714943D0F00261C27 /* opt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C264014943D0F00261C27 /* vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C263814943D0F00261C27 /* vaapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C264114943D0F00261C27 /* vda.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C263914943D0F00261C27 /* vda.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C264214943D0F00261C27 /* vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C263A14943D0F00261C27 /* vdpau.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,6 +94,10 @@
 		036C264C14943DA700261C27 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C264914943DA600261C27 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036C265014943DFD00261C27 /* avfiltergraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C264E14943DFC00261C27 /* avfiltergraph.h */; };
 		036C265114943DFD00261C27 /* avfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C264F14943DFC00261C27 /* avfilter.h */; };
+		C20F177B17E7B5C5005850EC /* avconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C20F177A17E7B5C5005850EC /* avconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C20F178417E7B768005850EC /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C20F178317E7B768005850EC /* config.h */; };
+		C20F178617E7B776005850EC /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C20F178517E7B776005850EC /* config.h */; };
+		C20F178A17E7B789005850EC /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C20F178917E7B789005850EC /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2226A7217E3CD2700012166 /* COPYING.LGPLv2.1 in Resources */ = {isa = PBXBuildFile; fileRef = C2226A7017E3CD1E00012166 /* COPYING.LGPLv2.1 */; };
 		C2226A7317E3CD2900012166 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2226A7117E3CD1E00012166 /* LICENSE */; };
 		C2226A7417E3CD3700012166 /* COPYING.LGPLv2.1 in Resources */ = {isa = PBXBuildFile; fileRef = C2226A6717E3CCA400012166 /* COPYING.LGPLv2.1 */; };
@@ -103,13 +110,20 @@
 		C2226A8317E3CD9100012166 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2226A7917E3CD5000012166 /* LICENSE */; };
 		C2226A8417E3CD9800012166 /* COPYING.LGPLv2.1 in Resources */ = {isa = PBXBuildFile; fileRef = C2226A7617E3CD4900012166 /* COPYING.LGPLv2.1 */; };
 		C2226A8517E3CD9A00012166 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2226A7717E3CD4900012166 /* LICENSE */; };
+		C239584A17EC78E10024E41E /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = C239584917EC78E10024E41E /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C239584C17EC79400024E41E /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C239584B17EC79400024E41E /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C239584E17EC79700024E41E /* frame.h in Headers */ = {isa = PBXBuildFile; fileRef = C239584D17EC79700024E41E /* frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C239585017EC799D0024E41E /* old_pix_fmts.h in Headers */ = {isa = PBXBuildFile; fileRef = C239584F17EC799D0024E41E /* old_pix_fmts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C239585217EC79C30024E41E /* intfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = C239585117EC79C30024E41E /* intfloat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C239585417EC7A070024E41E /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = C239585317EC7A070024E41E /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C254602F17E3B7960048CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C254602D17E3B7960048CF55 /* InfoPlist.strings */; };
 		C254603317E3B7AD0048CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C254603117E3B7AD0048CF55 /* InfoPlist.strings */; };
 		C254603717E3B7C00048CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C254603517E3B7C00048CF55 /* InfoPlist.strings */; };
 		C254603B17E3B7D00048CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C254603917E3B7D00048CF55 /* InfoPlist.strings */; };
 		C254603F17E3B7DE0048CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C254603D17E3B7DE0048CF55 /* InfoPlist.strings */; };
 		C254604317E3B7EC0048CF55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C254604117E3B7EC0048CF55 /* InfoPlist.strings */; };
-		C254604517E3B9450048CF55 /* avconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C254604417E3B9450048CF55 /* avconfig.h */; };
+		C2B6241917ED9C03009B2D99 /* samplefmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 036C25E3149333DF00261C27 /* samplefmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2CB869117EE479300397857 /* channel_layout.h in Headers */ = {isa = PBXBuildFile; fileRef = C2CB869017EE479300397857 /* channel_layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,40 +155,12 @@
 			remoteGlobalIDString = 036C253614932FB400261C27;
 			remoteInfo = libavutil;
 		};
-		036C261A149335A300261C27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 036C251014932F8100261C27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 036C257214932FE300261C27;
-			remoteInfo = libavcodec;
-		};
 		036C261C149335BA00261C27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 036C251014932F8100261C27 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 036C253614932FB400261C27;
 			remoteInfo = libavutil;
-		};
-		036C261E149335BA00261C27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 036C251014932F8100261C27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 036C255E14932FDC00261C27;
-			remoteInfo = libswscale;
-		};
-		036C2620149335BA00261C27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 036C251014932F8100261C27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 036C257214932FE300261C27;
-			remoteInfo = libavcodec;
-		};
-		036C2622149335BA00261C27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 036C251014932F8100261C27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 036C258614932FEA00261C27;
-			remoteInfo = libavformat;
 		};
 		037FBDF4149443D8003BF09D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -218,12 +204,12 @@
 			remoteGlobalIDString = 036C259A14932FF100261C27;
 			remoteInfo = libavfilter;
 		};
-		C254605F17E3C5360048CF55 /* PBXContainerItemProxy */ = {
+		C2569AC317E8B2950021BF3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 036C251014932F8100261C27 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C254605A17E3C4400048CF55;
-			remoteInfo = libav;
+			remoteGlobalIDString = C2FC42D217E7C2F600DB2AED;
+			remoteInfo = Configure;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -290,7 +276,6 @@
 		036C263414943D0F00261C27 /* avcodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
 		036C263514943D0F00261C27 /* avfft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avfft.h; sourceTree = "<group>"; };
 		036C263614943D0F00261C27 /* dxva2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dxva2.h; sourceTree = "<group>"; };
-		036C263714943D0F00261C27 /* opt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
 		036C263814943D0F00261C27 /* vaapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vaapi.h; sourceTree = "<group>"; };
 		036C263914943D0F00261C27 /* vda.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vda.h; sourceTree = "<group>"; };
 		036C263A14943D0F00261C27 /* vdpau.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vdpau.h; sourceTree = "<group>"; };
@@ -301,25 +286,38 @@
 		036C264914943DA600261C27 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		036C264E14943DFC00261C27 /* avfiltergraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avfiltergraph.h; sourceTree = "<group>"; };
 		036C264F14943DFC00261C27 /* avfilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avfilter.h; sourceTree = "<group>"; };
-		C2226A6717E3CCA400012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = COPYING.LGPLv2.1; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
-		C2226A6817E3CCA400012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = LICENSE; sourceTree = "<group>"; };
-		C2226A7017E3CD1E00012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = COPYING.LGPLv2.1; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
-		C2226A7117E3CD1E00012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = LICENSE; sourceTree = "<group>"; };
-		C2226A7617E3CD4900012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = COPYING.LGPLv2.1; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
-		C2226A7717E3CD4900012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = LICENSE; sourceTree = "<group>"; };
-		C2226A7817E3CD5000012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = COPYING.LGPLv2.1; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
-		C2226A7917E3CD5000012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = LICENSE; sourceTree = "<group>"; };
-		C2226A7A17E3CD5400012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = COPYING.LGPLv2.1; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
-		C2226A7B17E3CD5400012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = LICENSE; sourceTree = "<group>"; };
-		C2226A7C17E3CD5A00012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = COPYING.LGPLv2.1; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
-		C2226A7D17E3CD5A00012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = LICENSE; sourceTree = "<group>"; };
+		C20F177A17E7B5C5005850EC /* avconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avconfig.h; sourceTree = "<group>"; };
+		C20F178117E7B760005850EC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libav/config.h; sourceTree = SOURCE_ROOT; };
+		C20F178317E7B768005850EC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libav/config.h; sourceTree = SOURCE_ROOT; };
+		C20F178517E7B776005850EC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libav/config.h; sourceTree = SOURCE_ROOT; };
+		C20F178717E7B77D005850EC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libav/config.h; sourceTree = SOURCE_ROOT; };
+		C20F178917E7B789005850EC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libav/config.h; sourceTree = SOURCE_ROOT; };
+		C2226A6717E3CCA400012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
+		C2226A6817E3CCA400012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2226A7017E3CD1E00012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
+		C2226A7117E3CD1E00012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2226A7617E3CD4900012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
+		C2226A7717E3CD4900012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2226A7817E3CD5000012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
+		C2226A7917E3CD5000012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2226A7A17E3CD5400012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
+		C2226A7B17E3CD5400012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C2226A7C17E3CD5A00012166 /* COPYING.LGPLv2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = COPYING.LGPLv2.1; sourceTree = "<group>"; };
+		C2226A7D17E3CD5A00012166 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C239584917EC78E10024E41E /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		C239584B17EC79400024E41E /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		C239584D17EC79700024E41E /* frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		C239584F17EC799D0024E41E /* old_pix_fmts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = old_pix_fmts.h; sourceTree = "<group>"; };
+		C239585117EC79C30024E41E /* intfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intfloat.h; sourceTree = "<group>"; };
+		C239585317EC7A070024E41E /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		C254602E17E3B7960048CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		C254603217E3B7AD0048CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		C254603617E3B7C00048CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		C254603A17E3B7D00048CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		C254603E17E3B7DE0048CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		C254604217E3B7EC0048CF55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		C254604417E3B9450048CF55 /* avconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avconfig.h; sourceTree = SOURCE_ROOT; };
+		C2569B1817E901070021BF3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C2CB869017EE479300397857 /* channel_layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = channel_layout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,7 +325,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036C253814932FB400261C27 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +332,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036C254C14932FCD00261C27 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +339,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036C256014932FDC00261C27 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +346,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036C257414932FE300261C27 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +353,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036C258814932FEA00261C27 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +360,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036C259C14932FF100261C27 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				036C251D14932F8200261C27 /* Cocoa.framework */,
+				C2569B1817E901070021BF3C /* XCTest.framework */,
 				036C251F14932F8200261C27 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -490,7 +483,9 @@
 		036C263314943C7500261C27 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C20F178917E7B789005850EC /* config.h */,
 				036C263114943C7100261C27 /* swscale.h */,
+				C239585317EC7A070024E41E /* version.h */,
 			);
 			name = Headers;
 			path = libav/libswscale;
@@ -499,10 +494,10 @@
 		036C264414943D1600261C27 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C20F178117E7B760005850EC /* config.h */,
 				036C263414943D0F00261C27 /* avcodec.h */,
 				036C263514943D0F00261C27 /* avfft.h */,
 				036C263614943D0F00261C27 /* dxva2.h */,
-				036C263714943D0F00261C27 /* opt.h */,
 				036C263814943D0F00261C27 /* vaapi.h */,
 				036C263914943D0F00261C27 /* vda.h */,
 				036C263A14943D0F00261C27 /* vdpau.h */,
@@ -516,6 +511,7 @@
 		036C264D14943DAC00261C27 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C20F178517E7B776005850EC /* config.h */,
 				036C264714943DA600261C27 /* avformat.h */,
 				036C264814943DA600261C27 /* avio.h */,
 				036C264914943DA600261C27 /* version.h */,
@@ -527,11 +523,12 @@
 		036C265214943E0100261C27 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C20F178317E7B768005850EC /* config.h */,
 				036C264E14943DFC00261C27 /* avfiltergraph.h */,
 				036C264F14943DFC00261C27 /* avfilter.h */,
 			);
 			name = Headers;
-			path = libavfilter/libav/libavfilter;
+			path = libav/libavfilter;
 			sourceTree = "<group>";
 		};
 		C2226A6617E3CC8400012166 /* License */ = {
@@ -651,16 +648,19 @@
 		C254604617E3C1BB0048CF55 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C20F178717E7B77D005850EC /* config.h */,
 				036C25C4149333DF00261C27 /* adler32.h */,
 				036C25C5149333DF00261C27 /* aes.h */,
 				036C25C6149333DF00261C27 /* attributes.h */,
 				036C25C7149333DF00261C27 /* audioconvert.h */,
 				036C25C8149333DF00261C27 /* avassert.h */,
-				C254604417E3B9450048CF55 /* avconfig.h */,
+				C20F177A17E7B5C5005850EC /* avconfig.h */,
 				036C25CA149333DF00261C27 /* avstring.h */,
 				036C25CB149333DF00261C27 /* avutil.h */,
 				036C25CC149333DF00261C27 /* base64.h */,
 				036C262914943BCA00261C27 /* bswap.h */,
+				C239584B17EC79400024E41E /* buffer.h */,
+				C2CB869017EE479300397857 /* channel_layout.h */,
 				036C25CD149333DF00261C27 /* common.h */,
 				036C25CE149333DF00261C27 /* cpu.h */,
 				036C25CF149333DF00261C27 /* crc.h */,
@@ -669,7 +669,9 @@
 				036C25D2149333DF00261C27 /* eval.h */,
 				036C25D3149333DF00261C27 /* fifo.h */,
 				036C25D4149333DF00261C27 /* file.h */,
+				C239584D17EC79700024E41E /* frame.h */,
 				036C25D5149333DF00261C27 /* imgutils.h */,
+				C239585117EC79C30024E41E /* intfloat.h */,
 				036C25D6149333DF00261C27 /* intfloat_readwrite.h */,
 				036C262A14943BCA00261C27 /* intreadwrite.h */,
 				036C25D7149333DF00261C27 /* lfg.h */,
@@ -678,6 +680,7 @@
 				036C25DA149333DF00261C27 /* mathematics.h */,
 				036C25DB149333DF00261C27 /* md5.h */,
 				036C25DC149333DF00261C27 /* mem.h */,
+				C239584F17EC799D0024E41E /* old_pix_fmts.h */,
 				036C25DD149333DF00261C27 /* opt.h */,
 				036C25DE149333DF00261C27 /* parseutils.h */,
 				036C25DF149333DF00261C27 /* pixdesc.h */,
@@ -686,6 +689,7 @@
 				036C25E2149333DF00261C27 /* rational.h */,
 				036C25E3149333DF00261C27 /* samplefmt.h */,
 				036C25E4149333DF00261C27 /* sha.h */,
+				C239584917EC78E10024E41E /* version.h */,
 			);
 			name = Headers;
 			path = libav/libavutil;
@@ -767,6 +771,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20F177B17E7B5C5005850EC /* avconfig.h in Headers */,
 				036C262B14943BCB00261C27 /* bswap.h in Headers */,
 				036C262C14943BCB00261C27 /* intreadwrite.h in Headers */,
 				036C25E5149333E000261C27 /* adler32.h in Headers */,
@@ -777,6 +782,8 @@
 				036C25EB149333E000261C27 /* avstring.h in Headers */,
 				036C25EC149333E000261C27 /* avutil.h in Headers */,
 				036C25ED149333E000261C27 /* base64.h in Headers */,
+				C239584C17EC79400024E41E /* buffer.h in Headers */,
+				C2CB869117EE479300397857 /* channel_layout.h in Headers */,
 				036C25EE149333E000261C27 /* common.h in Headers */,
 				036C25EF149333E000261C27 /* cpu.h in Headers */,
 				036C25F0149333E000261C27 /* crc.h in Headers */,
@@ -785,23 +792,25 @@
 				036C25F3149333E000261C27 /* eval.h in Headers */,
 				036C25F4149333E000261C27 /* fifo.h in Headers */,
 				036C25F5149333E000261C27 /* file.h in Headers */,
+				C239585217EC79C30024E41E /* intfloat.h in Headers */,
 				036C25F6149333E000261C27 /* imgutils.h in Headers */,
 				036C25F7149333E000261C27 /* intfloat_readwrite.h in Headers */,
 				036C25F8149333E000261C27 /* lfg.h in Headers */,
-				C254604517E3B9450048CF55 /* avconfig.h in Headers */,
 				036C25F9149333E000261C27 /* log.h in Headers */,
 				036C25FA149333E000261C27 /* lzo.h in Headers */,
 				036C25FB149333E000261C27 /* mathematics.h in Headers */,
 				036C25FC149333E000261C27 /* md5.h in Headers */,
 				036C25FD149333E000261C27 /* mem.h in Headers */,
+				C239585017EC799D0024E41E /* old_pix_fmts.h in Headers */,
 				036C25FE149333E000261C27 /* opt.h in Headers */,
 				036C25FF149333E000261C27 /* parseutils.h in Headers */,
 				036C2600149333E000261C27 /* pixdesc.h in Headers */,
 				036C2601149333E000261C27 /* pixfmt.h in Headers */,
+				C2B6241917ED9C03009B2D99 /* samplefmt.h in Headers */,
 				036C2602149333E000261C27 /* random_seed.h in Headers */,
+				C239584E17EC79700024E41E /* frame.h in Headers */,
 				036C2603149333E000261C27 /* rational.h in Headers */,
-				036C2604149333E000261C27 /* samplefmt.h in Headers */,
-				036C2605149333E000261C27 /* sha.h in Headers */,
+				C239584A17EC78E10024E41E /* version.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +826,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20F178A17E7B789005850EC /* config.h in Headers */,
+				C239585417EC7A070024E41E /* version.h in Headers */,
 				036C263214943C7200261C27 /* swscale.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,7 +840,6 @@
 				036C263C14943D0F00261C27 /* avcodec.h in Headers */,
 				036C263D14943D0F00261C27 /* avfft.h in Headers */,
 				036C263E14943D0F00261C27 /* dxva2.h in Headers */,
-				036C263F14943D0F00261C27 /* opt.h in Headers */,
 				036C264014943D0F00261C27 /* vaapi.h in Headers */,
 				036C264114943D0F00261C27 /* vda.h in Headers */,
 				036C264214943D0F00261C27 /* vdpau.h in Headers */,
@@ -841,6 +851,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20F178617E7B776005850EC /* config.h in Headers */,
 				036C264A14943DA700261C27 /* avformat.h in Headers */,
 				036C264B14943DA700261C27 /* avio.h in Headers */,
 				036C264C14943DA700261C27 /* version.h in Headers */,
@@ -853,6 +864,7 @@
 			files = (
 				036C265014943DFD00261C27 /* avfiltergraph.h in Headers */,
 				036C265114943DFD00261C27 /* avfilter.h in Headers */,
+				C20F178417E7B768005850EC /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,7 +875,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 036C254314932FB400261C27 /* Build configuration list for PBXNativeTarget "libavutil" */;
 			buildPhases = (
-				036C25AA1493308E00261C27 /* ShellScript */,
+				036C25AA1493308E00261C27 /* Run Script */,
 				036C253314932FB400261C27 /* Frameworks */,
 				036C253414932FB400261C27 /* Headers */,
 				036C253514932FB400261C27 /* Resources */,
@@ -871,7 +883,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C254606017E3C5360048CF55 /* PBXTargetDependency */,
 			);
 			name = libavutil;
 			productName = libavutil;
@@ -948,7 +959,6 @@
 			);
 			dependencies = (
 				036C2617149335A300261C27 /* PBXTargetDependency */,
-				036C261B149335A300261C27 /* PBXTargetDependency */,
 			);
 			name = libavformat;
 			productName = libavformat;
@@ -968,9 +978,6 @@
 			);
 			dependencies = (
 				036C261D149335BA00261C27 /* PBXTargetDependency */,
-				036C261F149335BA00261C27 /* PBXTargetDependency */,
-				036C2621149335BA00261C27 /* PBXTargetDependency */,
-				036C2623149335BA00261C27 /* PBXTargetDependency */,
 			);
 			name = libavfilter;
 			productName = libavfilter;
@@ -997,7 +1004,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C254605A17E3C4400048CF55 /* Make */,
+				C2FC42D217E7C2F600DB2AED /* Configure */,
+				C27A2BF717E8B22700531C8B /* Make */,
 				036C253614932FB400261C27 /* libavutil */,
 				036C254A14932FCD00261C27 /* libavdevice */,
 				036C255E14932FDC00261C27 /* libswscale */,
@@ -1073,18 +1081,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		036C25AA1493308E00261C27 /* ShellScript */ = {
+		036C25AA1493308E00261C27 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd libav\ncd ./$EXECUTABLE_NAME\nld *.o -o $EXECUTABLE_NAME -framework Cocoa -lc -dylib -F$CONFIGURATION_BUILD_DIR -framework libavutil -install_name $EXECUTABLE_PATH\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME";
+			shellScript = "cd libav/$EXECUTABLE_NAME\nld $(find . -iname '*.o') -dylib -F $CONFIGURATION_BUILD_DIR -framework Cocoa -install_name \"@executable_path/../Frameworks/$EXECUTABLE_NAME.framework/Versions/A/$EXECUTABLE_NAME\" -lc -o $EXECUTABLE_NAME\necho \"cp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\"\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME";
 		};
 		036C25AB149330C600261C27 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1097,7 +1106,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd libav\ncd ./$EXECUTABLE_NAME\nld *.o */*.o -o $EXECUTABLE_NAME -F $CONFIGURATION_BUILD_DIR -framework libavutil -framework Cocoa -lc -dylib  -install_name $EXECUTABLE_PATH\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\n         ";
+			shellScript = "cd libav/$EXECUTABLE_NAME\nld $(find . -iname '*.o') -dylib -F $CONFIGURATION_BUILD_DIR -framework Cocoa -framework libavutil -install_name \"@executable_path/../Frameworks/$EXECUTABLE_NAME.framework/Versions/A/$EXECUTABLE_NAME\" -lc -o $EXECUTABLE_NAME\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME";
 		};
 		036C25AC1493311400261C27 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1110,7 +1119,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd libav\ncd ./$EXECUTABLE_NAME\nld *.o -o $EXECUTABLE_NAME -framework Cocoa -lc -dylib -F$CONFIGURATION_BUILD_DIR -framework libavutil -install_name $EXECUTABLE_PATH\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\n";
+			shellScript = "cd libav/$EXECUTABLE_NAME\nld $(find . -iname '*.o') -dylib -F $CONFIGURATION_BUILD_DIR -framework Cocoa -framework libavutil -install_name \"@executable_path/../Frameworks/$EXECUTABLE_NAME.framework/Versions/A/$EXECUTABLE_NAME\" -lc -o $EXECUTABLE_NAME\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME";
 		};
 		036C25AD1493313200261C27 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1123,7 +1132,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd libav\ncd ./$EXECUTABLE_NAME\nld *.o */*.o -o $EXECUTABLE_NAME -framework Cocoa -framework VideoDecodeAcceleration -framework CoreVideo -lc -lz -dylib -F $CONFIGURATION_BUILD_DIR -framework libavutil -install_name $EXECUTABLE_PATH\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\n         \n";
+			shellScript = "cd libav/$EXECUTABLE_NAME\nld $(find . -iname '*.o') -dylib -F $CONFIGURATION_BUILD_DIR -framework Cocoa -framework CoreVideo -framework libavutil -framework VideoDecodeAcceleration -install_name \"@executable_path/../Frameworks/$EXECUTABLE_NAME.framework/Versions/A/$EXECUTABLE_NAME\" -lc -lz -o $EXECUTABLE_NAME\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME";
 		};
 		036C25AE1493315100261C27 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1136,7 +1145,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd libav\ncd ./$EXECUTABLE_NAME\nld *.o -o $EXECUTABLE_NAME -framework Cocoa -lc -lz -lbz2 -dylib -F$CONFIGURATION_BUILD_DIR -framework libavutil -framework libavcodec -install_name $EXECUTABLE_PATH\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\n";
+			shellScript = "cd libav/$EXECUTABLE_NAME\nld $(find . -iname '*.o') -dylib -F$CONFIGURATION_BUILD_DIR -framework Cocoa -framework libavutil -framework libavcodec -install_name \"@executable_path/../Frameworks/$EXECUTABLE_NAME.framework/Versions/A/$EXECUTABLE_NAME\" -lbz2 -lc -lz -o $EXECUTABLE_NAME\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME";
 		};
 		036C25AF1493316700261C27 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1149,9 +1158,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd libav\ncd ./$EXECUTABLE_NAME\n\n# Make dylib from object files.\nld *.o */*.o -o $EXECUTABLE_NAME -framework Cocoa -lc -dylib -F$CONFIGURATION_BUILD_DIR -framework libavutil -framework libavcodec -framework libavformat -framework libswscale -install_name $EXECUTABLE_PATH\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\n\n# Header";
+			shellScript = "cd libav/$EXECUTABLE_NAME\nld $(find . -iname '*.o') -dylib -F $CONFIGURATION_BUILD_DIR -framework Cocoa -framework libavutil -framework libavcodec -framework libavformat -framework libswscale -install_name \"@executable_path/../Frameworks/$EXECUTABLE_NAME.framework/Versions/A/$EXECUTABLE_NAME\" -lc -o $EXECUTABLE_NAME\ncp ./$EXECUTABLE_NAME $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH\nln -f -s $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME";
 		};
-		C254605E17E3C4990048CF55 /* ShellScript */ = {
+		C27A2BF817E8B22700531C8B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1162,7 +1171,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd libav\necho $(PWD)\n\nLIBAV_CONFIGURE_OPTIONS=\"--disable-debug --disable-ffmpeg --enable-shared --disable-static \"\n\n#if yasm installed by MacPort on /opt/local/bin, comment out the following line.\n#export PATH=/opt/local/bin:$PATH;\n\ncommand -v yasm >/dev/null\nif [ $? -eq 1 ] ; then\n    LIBAV_CONFIGURE_OPTIONS+=\"--disable-yasm\"\nfi\necho $LIBAV_CONFIGURE_OPTIONS\n\n./configure $LIBAV_CONFIGURE_OPTIONS# > /dev/null\n\nmake -j4 all\n#cp config.h $(DERIVED_FILE_DIR)/config.h\nLIBAVUTIL_HEADERS=`make install-headers -n|grep $EXECUTABLE_NAME|tr \" \" \"\\n\"|grep \"^$EXECUTABLE_NAME.*h\\$\"`\necho $LIBAVUTIL_HEADERS";
+			shellScript = "cd libav\necho \"Running: cd $(PWD)\"\n\necho \"Running: cp config.h $(DERIVED_FILE_DIR)/config.h\"\n\necho `cp config.h $(DERIVED_FILE_DIR)/config.h`\n\n# LIBAVUTIL_HEADERS=`make install-headers -n | grep libavutil | tr \" \" \"\\n\" | grep \"^libavutil.*h\\$\"`\n# echo $LIBAVUTIL_HEADERS\n\necho \"Running: make -j4 all\"\necho `make -j4 all`\n\nexit 0";
+		};
+		C2FC42D617E7C32400DB2AED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd libav\necho \"Running: cd $(PWD)\"\n\nLIBAV_CONFIGURE_OPTIONS=\"--arch=x86_64 --disable-programs --disable-doc --disable-debug\"# --enable-shared --disable-static\n\n#if yasm installed by MacPort on /opt/local/bin, comment out the following line.\n#export PATH=/opt/local/bin:$PATH;\n\ncommand -v yasm >/dev/null\nif [ $? -eq 1 ] ; then\nLIBAV_CONFIGURE_OPTIONS+=\" --disable-yasm\"\nfi\n\necho \"Running: ./configure $LIBAV_CONFIGURE_OPTIONS\"\necho `./configure $LIBAV_CONFIGURE_OPTIONS` # > /dev/null\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1187,30 +1209,10 @@
 			target = 036C253614932FB400261C27 /* libavutil */;
 			targetProxy = 036C2616149335A300261C27 /* PBXContainerItemProxy */;
 		};
-		036C261B149335A300261C27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 036C257214932FE300261C27 /* libavcodec */;
-			targetProxy = 036C261A149335A300261C27 /* PBXContainerItemProxy */;
-		};
 		036C261D149335BA00261C27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 036C253614932FB400261C27 /* libavutil */;
 			targetProxy = 036C261C149335BA00261C27 /* PBXContainerItemProxy */;
-		};
-		036C261F149335BA00261C27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 036C255E14932FDC00261C27 /* libswscale */;
-			targetProxy = 036C261E149335BA00261C27 /* PBXContainerItemProxy */;
-		};
-		036C2621149335BA00261C27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 036C257214932FE300261C27 /* libavcodec */;
-			targetProxy = 036C2620149335BA00261C27 /* PBXContainerItemProxy */;
-		};
-		036C2623149335BA00261C27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 036C258614932FEA00261C27 /* libavformat */;
-			targetProxy = 036C2622149335BA00261C27 /* PBXContainerItemProxy */;
 		};
 		037FBDF5149443D8003BF09D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1242,10 +1244,10 @@
 			target = 036C259A14932FF100261C27 /* libavfilter */;
 			targetProxy = 037FBDFE149443D8003BF09D /* PBXContainerItemProxy */;
 		};
-		C254606017E3C5360048CF55 /* PBXTargetDependency */ = {
+		C2569AC417E8B2950021BF3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C254605A17E3C4400048CF55 /* Make */;
-			targetProxy = C254605F17E3C5360048CF55 /* PBXContainerItemProxy */;
+			target = C2FC42D217E7C2F600DB2AED /* Configure */;
+			targetProxy = C2569AC317E8B2950021BF3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1305,6 +1307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1329,9 +1332,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -1339,13 +1344,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1357,8 +1363,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -1372,6 +1380,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavutil/libavutil-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavutil/libavutil-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavutil",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1387,6 +1399,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavutil/libavutil-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavutil/libavutil-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavutil",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1402,6 +1418,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavdevice/libavdevice-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavdevice/libavdevice-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavdevice",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1417,6 +1437,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavdevice/libavdevice-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavdevice/libavdevice-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavdevice",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1432,6 +1456,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libswscale/libswscale-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libswscale/libswscale-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libswscale",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1447,6 +1475,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libswscale/libswscale-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libswscale/libswscale-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libswscale",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1462,6 +1494,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavcodec/libavcodec-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavcodec/libavcodec-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavcodec",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1477,6 +1513,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavcodec/libavcodec-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavcodec/libavcodec-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavcodec",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1492,6 +1532,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavformat/libavformat-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavformat/libavformat-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavformat",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1507,6 +1551,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavformat/libavformat-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavformat/libavformat-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavformat",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1522,6 +1570,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavfilter/libavfilter-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavfilter/libavfilter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavfilter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1537,6 +1589,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavfilter/libavfilter-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavfilter/libavfilter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavfilter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1556,14 +1612,28 @@
 			};
 			name = Release;
 		};
-		C254605C17E3C4400048CF55 /* Debug */ = {
+		C27A2BFA17E8B22700531C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Configure copy";
+			};
+			name = Debug;
+		};
+		C27A2BFB17E8B22700531C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Configure copy";
+			};
+			name = Release;
+		};
+		C2FC42D417E7C2F600DB2AED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C254605D17E3C4400048CF55 /* Release */ = {
+		C2FC42D517E7C2F600DB2AED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1645,11 +1715,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C254605B17E3C4400048CF55 /* Build configuration list for PBXAggregateTarget "Make" */ = {
+		C27A2BF917E8B22700531C8B /* Build configuration list for PBXAggregateTarget "Make" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C254605C17E3C4400048CF55 /* Debug */,
-				C254605D17E3C4400048CF55 /* Release */,
+				C27A2BFA17E8B22700531C8B /* Debug */,
+				C27A2BFB17E8B22700531C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2FC42D317E7C2F600DB2AED /* Build configuration list for PBXAggregateTarget "Configure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FC42D417E7C2F600DB2AED /* Debug */,
+				C2FC42D517E7C2F600DB2AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

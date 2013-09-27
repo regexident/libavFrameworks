@@ -5,38 +5,38 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>7F898134-3349-42AE-A7C5-26F096C0833D</string>
+	<string>141E4EC4-C9BD-4DF4-B263-BE60ABACE7A8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>libavFrameworks</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7DF69ED2-3026-4A92-8014-8066035567D7</key>
-		<string>https://github.com/regexident/libavFrameworks.git</string>
-		<key>AE29FA32-870F-4E69-AD94-32EC0DBDE57D</key>
+		<key>5AE82B4B-2062-4A89-8C33-4E48564C24FA</key>
 		<string>https://github.com/libav/libav</string>
+		<key>E17D1A00-49FC-4862-8133-E0A1421DB259</key>
+		<string>https://github.com/regexident/libavFrameworks.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>libavFrameworks.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7DF69ED2-3026-4A92-8014-8066035567D7</key>
-		<string>../..</string>
-		<key>AE29FA32-870F-4E69-AD94-32EC0DBDE57D</key>
+		<key>5AE82B4B-2062-4A89-8C33-4E48564C24FA</key>
 		<string>../../libav</string>
+		<key>E17D1A00-49FC-4862-8133-E0A1421DB259</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/regexident/libavFrameworks.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7DF69ED2-3026-4A92-8014-8066035567D7</string>
+	<string>E17D1A00-49FC-4862-8133-E0A1421DB259</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AE29FA32-870F-4E69-AD94-32EC0DBDE57D</string>
+			<string>5AE82B4B-2062-4A89-8C33-4E48564C24FA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>libav</string>
 		</dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7DF69ED2-3026-4A92-8014-8066035567D7</string>
+			<string>E17D1A00-49FC-4862-8133-E0A1421DB259</string>
 			<key>IDESourceControlWCCName</key>
 			<string>libFrameworks</string>
 		</dict>
