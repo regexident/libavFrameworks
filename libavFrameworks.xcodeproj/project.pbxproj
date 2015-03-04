@@ -1667,10 +1667,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavutil/libavutil-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavutil/libavutil-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavutil",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1686,10 +1682,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavutil/libavutil-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavutil/libavutil-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavutil",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1705,10 +1697,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavdevice/libavdevice-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavdevice/libavdevice-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavdevice",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1724,10 +1712,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavdevice/libavdevice-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavdevice/libavdevice-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavdevice",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1743,10 +1727,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libswscale/libswscale-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libswscale/libswscale-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libswscale",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1762,10 +1742,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libswscale/libswscale-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libswscale/libswscale-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libswscale",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1781,10 +1757,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavcodec/libavcodec-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavcodec/libavcodec-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavcodec",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1800,10 +1772,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavcodec/libavcodec-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavcodec/libavcodec-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavcodec",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1819,10 +1787,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavformat/libavformat-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavformat/libavformat-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavformat",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1838,10 +1802,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavformat/libavformat-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavformat/libavformat-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavformat",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1857,10 +1817,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavfilter/libavfilter-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavfilter/libavfilter-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavfilter",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1876,10 +1832,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libavfilter/libavfilter-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavfilter/libavfilter-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libavfilter",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1909,10 +1861,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libswscale/libswscale-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavresample/libavresample-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libswscale",
-				);
 				PRODUCT_NAME = libavresample;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1928,10 +1876,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libavFrameworks/libswscale/libswscale-Prefix.pch";
 				INFOPLIST_FILE = "libavFrameworks/libavresample/libavresample-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/definiteloop/Desktop/Definite\\ Loop/libFrameworks/libav/libswscale",
-				);
 				PRODUCT_NAME = libavresample;
 				WRAPPER_EXTENSION = framework;
 			};
